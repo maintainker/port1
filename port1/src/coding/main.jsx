@@ -2,6 +2,7 @@ import React from "react";
 import Header from './header';
 import Coding from './coding'
 import Standard from './standard'
+import Responsible from './responsible';
 import'./main.scss';
 
 const Main =()=>{
@@ -10,6 +11,7 @@ const Main =()=>{
         <Coding/>
         <div className ="page">
             <Standard />
+            <Responsible />
         </div>
     </div>);
 }

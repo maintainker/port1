@@ -11,19 +11,35 @@
 #coding .coding_main .mouse .out::after {position: absolute;left: 50%; transform: translateX(-50%); top: -10px;  content: "";width: 3px; height: 10px; background-color: #888;}
 #coding .coding_main .mouse span { font-size: 40px; font-weight: 200;}
 
-#coding .page {width: 100%; height: 100%; background-color: #000;}
-#coding .page .standard{margin: 0 auto; height: calc(100vh - 150px); width: 1220px; background-color: #000; position: relative; clear: both;}
-#coding .page .standard section {height: 100%; width: 60%;background-color: #777; position: absolute;left: 0;}
-#coding .page .standard nav {height: 100%; width: 40%;position: absolute;right: 0;}
+#coding .page {width: 100%; }
+#coding .page span.plus{text-align: center; transition: all 0.3s ease; height: 30px; width: 30px; line-height: 30px; margin-right: 10px; border: 1px solid #888; color:#fff;}
+#coding .page div:hover .plus{ background: #000; border-color: #000; transform: rotate(360deg);}
+#coding .page .standard{margin: 0 auto; height: calc(100vh - 150px); width: 1220p; position: relative; clear: both;}
+#coding .page .standard section {height: 100%; width: 60%;background-color: #777;float: left;}
+#coding .page .standard nav {height: 100%; width: 40%;float: left;}
 #coding .page .standard nav .card {width: calc(100% - 5px); padding-right: 5px; height:400px; margin-top: 50px; position: relative;}
 #coding .page .standard nav .card .title{display: block; position: absolute; top: 0;right: 5px;}
 #coding .page .standard nav .card .orange {font-size: 20px; color: #c46b16;}
-#coding .page .standard nav .card span {color: #fff;text-align: right;}
+#coding .page .standard nav .card span {color: #fff;}
 #coding .page .standard nav .card .exp{text-align: right;position: absolute; right: 5px; top: 41%; transform: translateY(-50%); font-size: 75px;font-weight: bold;}
 #coding .page .standard nav .card .name {display:block; position: absolute; bottom: 0; right: 0; text-align: right;}
 #coding .page .standard nav .card .name span:first-child {font-size: 20px;}
 #coding .page .standard nav .card div:last-child {position: absolute; right: 0; bottom: -13%;}
 #coding .page .standard nav .card div:last-child span {display: inline-block;}
-#coding .page .standard nav .card div:last-child .plus{transition: all 0.3s ease; height: 30px; width: 30px; line-height: 30px; text-align: center; margin-right: 10px; border: 1px solid #888; color:#fff;}
-#coding .page .standard nav .card div:last-child:hover .plus{ background: #000; border-color: #000; transform: rotate(360deg);}
+
+#coding .page .responsible{margin: 0 auto; margin-top: 350px; height: calc(100vh - 150px); width: 1220p; position: relative; clear: both;}
+#coding .page .responsible section {height: 100%; width: 60%;background-color: #777;float: right;}
+#coding .page .responsible nav {height: 100%; width: 40%;float: right;}
+#coding .page .responsible nav .card {width: calc(100% - 5px); padding-right: 5px; height:400px; margin-top: 50px; position: relative;}
+#coding .page .responsible nav .card .title{display: block; position: absolute; top: 0;left: 5px;}
+#coding .page .responsible nav .card .orange {font-size: 20px; color: #c46b16;}
+#coding .page .responsible nav .card span {color: #fff;}
+#coding .page .responsible nav .card .exp{text-align: left;position: absolute; left: 5px; top: 41%; transform: translateY(-50%); font-size: 75px;font-weight: bold;}
+#coding .page .responsible nav .card .name {display:block; position: absolute; bottom: 0; left: 0; text-align: left;}
+#coding .page .responsible nav .card .name span:first-child {font-size: 20px;}
+#coding .page .responsible nav .card div:last-child {position: absolute; left: 0; bottom: -13%;}
+#coding .page .responsible nav .card div:last-child span {display: inline-block;}
+
+
+
 

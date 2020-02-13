@@ -10,9 +10,9 @@ const Main =(disp)=>{
         <div className = "main_tit">
             <div><MdReplay/></div>
             <header>
-                Front-End Deveoloper
+                Front-End Developer
             </header>
-            <span>genuine ideas &amp; createion for coding</span>
+            <span>genuine ideas &amp; coding for creation</span>
             <MainMenu disp = {disp}/>
             
         </div>
