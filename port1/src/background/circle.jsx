@@ -39,7 +39,9 @@ const Circle =(color)=>{
         left: ${color.left+"vw"};
         top: ${color.top+"vh"}; 
         width: ${size};
-        height: ${size}`
+        height: ${size};
+        z-index:1;`
+        
     return (
         <Bgc className={cl_name}></Bgc>
    );

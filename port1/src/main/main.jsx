@@ -5,7 +5,7 @@ import MainMenu from "./MainMenu";
 import Mainicon from "./main_icon";
 
 
-const Main =(disp)=>{
+const Main =({click_menu})=>{
     return (<div id="main">
         <div className = "main_tit">
             <div><MdReplay/></div>
@@ -13,7 +13,7 @@ const Main =(disp)=>{
                 Front-End Developer
             </header>
             <span>genuine ideas &amp; coding for creation</span>
-            <MainMenu disp = {disp}/>
+            <MainMenu click_menu = {click_menu}/>
             
         </div>
         <Mainicon />

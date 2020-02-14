@@ -6,3 +6,7 @@
 #header p {color:#fff; font-size: 60px; line-height: 150px;}
 
 
+#footer {height: 200px; width: 100%;}
+#footer .prev {position: absolute; left: 50px; top: 50%; transform: translateY(-50%);}
+#footer .next {position: absolute; right: 50px; top: 50%; transform: translateY(-50%);}
+#footer .arrows{position: relative; top:4px; display: inline-block;}

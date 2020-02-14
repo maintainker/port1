@@ -12,10 +12,10 @@ a {text-decoration: none; color: #000;}
 #main .main_tit ul li:last-child{ padding-right:  0;}
 #main .main_tit ul a {color: #fff; transition: 0.3s;}
 #main .icons{color: #fff; font-size: 40px;}
-#main .icons #kakao{height: 37px; width: 37px; border-radius: 50%; background-color: #fff; text-align: center; line-height: 38px; color: #000; font-weight: bold;}
+#main .icons #kakao{position: relative; top:-2px; height: 37px; width: 37px; border-radius: 50%; background-color: #fff; text-align: center; line-height: 38px; color: #000; font-weight: bold;}
 #main .icons {position: absolute; bottom: 20px; display: block; left: 50%; transform: translateX(-50%);}
 #main .icons li {display: inline-block; padding-right: 20px;}
-#main .icons li:right { padding-right: 0;}
+#main .icons li:last-child { right: 0; padding-right: 0;}
 
 
 
