@@ -31,7 +31,7 @@ const Footer =(name)=>{
     return (<Footer id="footer">
         <Arrow className ="prev" onClick={()=>{onclick("prev")}}><div className="arrows"><MdArrowBack/></div> {menu.prev}</Arrow>
         <div></div>
-        <Arrow className="next" onClick={()=>{onclick("prev")}}>{menu.next} <div className="arrows"><MdArrowForward/></div></Arrow>
+        <Arrow className="next" onClick={()=>{onclick("next")}}>{menu.next} <div className="arrows"><MdArrowForward/></div></Arrow>
     </Footer>);
 }
 

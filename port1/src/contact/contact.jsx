@@ -6,7 +6,7 @@ import Main from "./CoMain";
 
 const Contact = ({click_menu}) =>{
     return (<div id ="contact">
-        <Header />
+        <Header click_menu={click_menu}/>
         <Main />
         <Footer name = {"contact"} click_menu={click_menu}/>
     </div>);

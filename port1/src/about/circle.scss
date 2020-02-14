@@ -1,0 +1,40 @@
+.circle{position: relative;}
+.circle .twelv_six{width: 2px; height: 2px;; position: absolute;top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.circle .twelv_six::before{content: "";  top: 0; right:115px;  width: 10px; height: 1px; background-color: #fff; position: absolute;}
+.circle .twelv_six::after{content: "";bottom: 0; left: 115px;  width: 10px; height: 1px; background-color: #fff; position: absolute;}
+.circle .thre_nine{width: 2px; height: 2px;; position: absolute;top: 50%; left: 50%; transform: translate(-50%,-50%) rotate(90deg);}
+.circle .thre_nine::before{content: "";  top: 0; right:115px;  width: 10px; height: 1px; background-color: #fff; position: absolute;}
+.circle .thre_nine::after{content: "";bottom: 0; left: 115px;  width: 10px; height: 1px; background-color: #fff; position: absolute;}
+.circle .five_fifty{width: 2px; height: 2px;; position: absolute;top: 50%; left: 50%; transform: translate(-50%,-50%) rotate(18deg);}
+.circle .five_fifty::before{content: "";  top: 0; right:115px;  width: 5px; height: 1px; background-color: #fff; position: absolute;}
+.circle .five_fifty::after{content: "";bottom: 0; left: 115px;  width: 5px; height: 1px; background-color: #fff; position: absolute;}
+.circle .ten_sixty{width: 2px; height: 2px;; position: absolute;top: 50%; left: 50%; transform: translate(-50%,-50%) rotate(36deg);}
+.circle .ten_sixty::before{content: "";  top: 0; right:115px;  width: 5px; height: 1px; background-color: #fff; position: absolute;}
+.circle .ten_sixty::after{content: "";bottom: 0; left: 115px;  width: 5px; height: 1px; background-color: #fff; position: absolute;}
+.circle .fifte_sixtyfi{width: 2px; height: 2px;; position: absolute;top: 50%; left: 50%; transform: translate(-50%,-50%) rotate(54deg);}
+.circle .fifte_sixtyfi::before{content: "";  top: 0; right:115px;  width: 5px; height: 1px; background-color: #fff; position: absolute;}
+.circle .fifte_sixtyfi::after{content: "";bottom: 0; left: 115px;  width: 5px; height: 1px; background-color: #fff; position: absolute;}
+.circle .twenty_seventy{width: 2px; height: 2px;; position: absolute;top: 50%; left: 50%; transform: translate(-50%,-50%) rotate(72deg);}
+.circle .twenty_seventy::before{content: "";  top: 0; right:115px;  width: 5px; height: 1px; background-color: #fff; position: absolute;}
+.circle .twenty_seventy::after{content: "";bottom: 0; left: 115px;  width: 5px; height: 1px; background-color: #fff; position: absolute;}
+.circle .minus_five_fifty{width: 2px; height: 2px;; position: absolute;top: 50%; left: 50%; transform: translate(-50%,-50%) rotate(-18deg);}
+.circle .minus_five_fifty::before{content: "";  top: 0; right:115px;  width: 5px; height: 1px; background-color: #fff; position: absolute;}
+.circle .minus_five_fifty::after{content: "";bottom: 0; left: 115px;  width: 5px; height: 1px; background-color: #fff; position: absolute;}
+.circle .minus_ten_sixty{width: 2px; height: 2px;; position: absolute;top: 50%; left: 50%; transform: translate(-50%,-50%) rotate(-36deg);}
+.circle .minus_ten_sixty::before{content: "";  top: 0; right:115px;  width: 5px; height: 1px; background-color: #fff; position: absolute;}
+.circle .minus_ten_sixty::after{content: "";bottom: 0; left: 115px;  width: 5px; height: 1px; background-color: #fff; position: absolute;}
+.circle .minus_fifte_sixtyfi{width: 2px; height: 2px;; position: absolute;top: 50%; left: 50%; transform: translate(-50%,-50%) rotate(-54deg);}
+.circle .minus_fifte_sixtyfi::before{content: "";  top: 0; right:115px;  width: 5px; height: 1px; background-color: #fff; position: absolute;}
+.circle .minus_fifte_sixtyfi::after{content: "";bottom: 0; left: 115px;  width: 5px; height: 1px; background-color: #fff; position: absolute;}
+.circle .minus_twenty_seventy{width: 2px; height: 2px;; position: absolute;top: 50%; left: 50%; transform: translate(-50%,-50%) rotate(-72deg);}
+.circle .minus_twenty_seventy::before{content: "";  top: 0; right:115px;  width: 5px; height: 1px; background-color: #fff; position: absolute;}
+.circle .minus_twenty_seventy::after{content: "";bottom: 0; left: 115px;  width: 5px; height: 1px; background-color: #fff; position: absolute;}
+
+.circle .skilll{ font-size: 50px; color: #fff; position: absolute; top: 19%; left: 50%; transform: translateX(-50%);}
+.circle .count{ font-size: 50px; color: #fff; position: absolute; top: 47%; left: 50%; transform: translateX(-50%);}
+
+
+
+
+
+

@@ -27,14 +27,15 @@ const Circle =(color)=>{
         100% {left:${color.left}vw; top:${color.top}vh;}
     `;
     
-    
+    let time = color.time;
+    if(time===undefined){time=10;}
     
     //color
     if(color.color==="yellow"&&c_color!=="rgb(255,217,74)"){set_color("rgb(255,217,74)");}
     else if(color.color==="white"&&c_color!=="rgb(255,255,255)"){set_color("rgb(255,255,255)");}
 
     const Bgc= styled.div`
-        animation:${move} 10s ease-in-out infinite;
+        animation:${move} ${time}s ease-in-out infinite;
         background: ${c_color};
         left: ${color.left+"vw"};
         top: ${color.top+"vh"}; 

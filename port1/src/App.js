@@ -7,8 +7,6 @@ import About from "./about/about"
 import Contact from "./contact/contact"
 
 
-
-
 function App() {
   const [disp,set_disp]=useState("main");
   const click_menu = useCallback( (value) =>{
@@ -16,6 +14,7 @@ function App() {
     console.log(disp);
   },[disp]);
 
+ 
   if(disp==="main"){
     return (
       <div className="App">

@@ -17,9 +17,9 @@
 }
 
 
-#coding .page {width: 100%; }
+#coding .page {width: 1220px;  margin: 0 auto;}
 #coding .page span.plus{text-align: center; transition: all 0.3s ease; height: 30px; width: 30px; line-height: 30px; margin-right: 10px; border: 1px solid #888; color:#fff;}
-#coding .page div:hover .plus{ background: #000; border-color: #000; transform: rotate(360deg);}
+#coding .page .card div:last-child:hover .plus{ background: #000; border-color: #000; transform: rotate(360deg);}
 #coding .page .standard{margin: 0 auto; height: calc(100vh - 150px); width: 1220p; position: relative; clear: both;}
 #coding .page .standard section {height: 100%; width: 60%;background-color: #777;float: left;}
 #coding .page .standard nav {height: 100%; width: 40%;float: left;}

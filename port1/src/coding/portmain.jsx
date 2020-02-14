@@ -22,7 +22,7 @@ const PortMain =({click_menu})=>{
     `;
 
     return (<div id="coding">
-        <Header />
+        <Header click_menu={click_menu}/>
         <Coding/>
         <div className ="page">
             <Standard />

@@ -7,7 +7,7 @@ import Skill from "./skill";
 
 const About = ({click_menu}) =>{
     return (<div id ="about">
-        <Header />
+        <Header click_menu={click_menu} />
         <Main />
         <Charater />
         <Skill/>

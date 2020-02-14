@@ -24,7 +24,10 @@
 #about .char div .habby {position: absolute; left: 50%; top: 0; transform: translate(-50%,-10%);}
 #about .char div .concern {position: absolute; right: 0; top: 10%;}
 
-#about .skill {width: 100%; height: calc(100vh - 150px);}
+#about .skill {width: 100%; height: calc(100vh - 150px); position: relative;}
+#about .skill .italic{color:#ffd94a; text-align: center; font-size: 70px; position: absolute; left: 50%; top: 0%; transform: translateX(-50%);}
+#about .skill .box {position: relative; top: 50%; transform: translateY(-50%); width: 1220px; height: 210px; margin: 0 auto; text-align: center;}
+#about .skill .box>div{position: relative; display: inline-block;width: 300px; height: 210px;}
 
 
 
