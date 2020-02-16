@@ -20,8 +20,9 @@
 #coding .page {width: 1220px;  margin: 0 auto;}
 #coding .page span.plus{text-align: center; transition: all 0.3s ease; height: 30px; width: 30px; line-height: 30px; margin-right: 10px; border: 1px solid #888; color:#fff;}
 #coding .page .card div:last-child:hover .plus{ background: #000; border-color: #000; transform: rotate(360deg);}
-#coding .page .standard{margin: 0 auto; height: calc(100vh - 150px); width: 1220p; position: relative; clear: both;}
-#coding .page .standard section {height: 100%; width: 60%;background-color: #777;float: left;}
+#coding .page .standard{margin: 0 auto; margin-top: 350px; height: calc(100vh - 150px); width: 1220p; position: relative; clear: both;}
+#coding .page .standard section {height: 100%; width: 60%;float: left; position: relative;}
+#coding .page .standard section .img1{width: 450px; height: auto; position: absolute; top: 50px; right: 18%;}
 #coding .page .standard nav {height: 100%; width: 40%;float: left;}
 #coding .page .standard nav .card {width: calc(100% - 5px); padding-right: 5px; height:400px; margin-top: 50px; position: relative;}
 #coding .page .standard nav .card .title{display: block; position: absolute; top: 0;right: 5px;}

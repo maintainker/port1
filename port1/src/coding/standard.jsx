@@ -1,8 +1,11 @@
 import React from "react";
+import stand_img1 from'../img/standard1.png';
 
 const Standard =() =>{
     return (<div className="standard">
-        <section></section>
+        <section>
+            <img className="img1" src={stand_img1} alt="standard1"/>
+        </section>
         <nav>
             <div className="card">
                 <span className ="title orange">Web Standard</span>

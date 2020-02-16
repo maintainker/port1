@@ -2,7 +2,9 @@ import React from "react";
 
 const Responsible =() =>{
     return (<div className="responsible">
-        <section></section>
+        <section>
+            
+        </section>
         <nav>
             <div className="card">
                 <span className ="title orange">Responsible Web Site</span>

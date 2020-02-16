@@ -9,17 +9,12 @@ const Circle =(color)=>{
     if(color.children === "1"&&size!=="2.5px"){set_size("2.5px");} 
     else if(color.children === "2"&&size!=="9px"){set_size("9px"); } 
     else if(color.children === "3"&&size!=="15px"){set_size("15px"); } 
-    /*.deg34{ transform: scale(0.521681); transition: 0.3s ; animation: deg32 3.5s ease-in-out 0.1s infinite;}
 
-    @keyframes deg32{
-    0%{left: 50px;}
-    50%{left: 0;}
-    100%{left:50px}
-    }
-    */
-    const deg_x = 30*Math.cos(Math.PI*color.deg/180);
-    const deg_y = 30*Math.sin(Math.PI*color.deg/180);
-    //console.log(deg_x,deg_y);
+
+    let length = color.length;
+    if (length===undefined){length=30;}
+    const deg_x = length*Math.cos(Math.PI*color.deg/180);
+    const deg_y = length*Math.sin(Math.PI*color.deg/180);
    
     const move = keyframes`
         0% {left:${color.left}vw; top:${color.top}vh;}

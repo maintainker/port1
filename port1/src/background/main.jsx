@@ -7,9 +7,15 @@ import './main.scss';
 const Bgc =() =>{
 
 
-
+//  color = white /yellow
+// left, right => vw
+// deg => 시초선을 기준으로 시계방향(cw)
+// length=> 몇 vh 이동할것인가(기본 30)
+// time => 몇초 왕복할것인가? (기본10s)
+//children => 1/2/3(크기)
     
     return <div id='bg'>
+        <Circle color={'yellow'} left = {5}top={80} deg={-60}>1</Circle>
         <Circle color={'yellow'} left = {90}top={34} deg={180}>2</Circle>
         <Circle color={'white'} left = {34}top={81} deg={34}>2</Circle>
         <Circle color={'yellow'} left = {62}top={62} deg={90}>2</Circle>
