@@ -1,4 +1,4 @@
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0;font-family: 'Noto Sans', sans-serif;}
 #about {height: 100vh; width: 100%; background-color: #000;}
 #about .coding_main {position: relative; height: calc(100% - 150px); padding-top: 150px; width: 100%;}
 #about .coding_main .title {display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center;}
@@ -24,12 +24,30 @@
 #about .char div .habby {position: absolute; left: 50%; top: 0; transform: translate(-50%,-10%);}
 #about .char div .concern {position: absolute; right: 0; top: 10%;}
 
+
+
 #about .skill {width: 100%; height: calc(100vh - 150px); position: relative;}
 #about .skill .italic{color:#ffd94a; text-align: center; font-size: 70px; position: absolute; left: 50%; top: 0%; transform: translateX(-50%);}
 #about .skill .box {position: relative; top: 50%; transform: translateY(-50%); width: 1220px; height: 210px; margin: 0 auto; text-align: center;}
 #about .skill .box>div{position: relative; display: inline-block;width: 300px; height: 210px;}
+#about .skill .box>div:last-child {margin-top: 50px; width: 100%; overflow: hidden;}
+#about .skill .box ul {color: white; width: 200px; padding: 0 50px; height: 100%; float: left; text-align: left;}
+#about .skill .box ul:last-child{padding-left: 70px;}
 
 
+/*mediaquery*/
 
+/*DISPLAY width 0~1220px*/
+@media(max-width:1220px){
 
+    #about .skill{padding-top: 150px;}
+    #about .skill .box { width: 600px; height: auto;}
+    #about .skill .box>div {margin-bottom: 100px;}
+    #about .skill .box>div:last-child {display: none;}
+}
 
+/*DISPLAY width 0~960px*/
+@media(max-width:960px){
+#about .char div{width: 650px;}
+#about .char div div {width: 200px;}
+}

@@ -7,7 +7,7 @@ const Coding =() =>{
 
     return (<div className ="coding_main">
         <div className="title">
-            <h1>CODING</h1>
+            <h1>Portfolio</h1>
             <span>introducing my code</span>
         </div>
 

@@ -3,7 +3,7 @@ import Header from '../header';
 import Coding from './coding'
 import Standard from './standard'
 import Responsible from './responsible';
-import Clone from './clonecod';
+//import Clone from './clonecod';
 import AnimaMain from './animation/animaMain';
 import'./main.scss';
 import styled from 'styled-components';
@@ -27,11 +27,10 @@ const PortMain =({click_menu})=>{
         <div className ="page">
             <Standard />
             <Responsible />
-            <Clone />
             <AnimaMain />
-            <ReactMain>React Code</ReactMain>
-            <Footer name={"portfolio"} click_menu={click_menu}></Footer>
         </div>
+            <ReactMain>React Project</ReactMain>
+            <Footer name={"portfolio"} click_menu={click_menu}></Footer>
     </div>);
 }
 

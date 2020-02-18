@@ -1,4 +1,7 @@
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0;font-family: 'Noto Sans', sans-serif;}
+.link {cursor: pointer;}
+
+
 #coding {height: 100vh; width: 100%; background-color: #000;}
 #coding .coding_main {position: relative; height: calc(100% - 150px); padding-top: 150px; width: 100%;}
 #coding .coding_main .title {display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center;}
@@ -35,7 +38,9 @@
 #coding .page .standard nav .card div:last-child span {display: inline-block;}
 
 #coding .page .responsible{margin: 0 auto; margin-top: 350px; height: calc(100vh - 150px); width: 1220p; position: relative; clear: both;}
-#coding .page .responsible section {height: 100%; width: 60%;background-color: #777;float: right;}
+#coding .page .responsible section {height: 100%; width: 60%;float: right; position: relative;}
+#coding .responsible section .compu {width: 700px; height: auto; position: absolute; top: 5%; left: 0;} 
+#coding .responsible section .mobile {width: 350px; height: auto; position: absolute; bottom: 23%; right: 0;}
 #coding .page .responsible nav {height: 100%; width: 40%;float: right;}
 #coding .page .responsible nav .card {width: calc(100% - 5px); padding-right: 5px; height:400px; margin-top: 50px; position: relative;}
 #coding .page .responsible nav .card .title{display: block; position: absolute; top: 0;left: 5px;}
@@ -66,3 +71,18 @@
 
 
 
+
+
+/*mediaquery*/
+
+/*DISPLAY width 0~1220px*/
+@media(max-width:1220px){
+#coding .page{width: 600px; padding:0 10px;}
+#coding .page .responsible section,#coding .page .standard section  {display: none;}
+#coding .page .responsible nav,#coding .page .standard nav{width: 100%;} 
+#coding .page .standard nav .card .title{left: 5px;}
+#coding .page .standard nav .card .exp {left:5px;}
+#coding .page .standard nav .card .name {left:0; text-align: left;}
+#coding .page .standard nav .card div:last-child {left: 0;}
+#coding .page .standard nav .card .exp{text-align: left}
+}

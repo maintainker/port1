@@ -1,4 +1,4 @@
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0;font-family: 'Noto Sans', sans-serif;}
 #contact {height: 100vh; width: 100%; background-color: #000;}
 #contact .coding_main {position: relative; height: calc(100% - 150px); padding-top: 150px; width: 100%;}
 #contact .coding_main .title {display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center;}
@@ -11,8 +11,34 @@
 #contact .coding_main .mouse .out::after {position: absolute;left: 50%; transform: translateX(-50%); top: -10px;  content: "";width: 3px; height: 10px; background-color: #888;}
 #contact .coding_main .mouse span {top: -20px; left: 50%; transform: translateX(-50%); display: block; position: absolute; font-size: 40px; font-weight: 200;}
 
+#contact .cont_me{width: 100%; height: 500px; position: relative; padding-top: 200px ;}
+.cont_me .wrap {width: 1000px; overflow: hidden; margin: 0 auto;}
+.cont_me .name {width: 200px; height: 300px; font-size: 70px; color:white;font-weight: bold; float: left; margin-top: 50px; margin-left: 100px;}
+.cont_me .photo {width: 300px; height: 300px; float: left;position: relative; margin-top: 50px; color:white; }
+.cont_me .photo div{position: absolute; top: 40%; left: 60%; transform: translate(-50%,-50%);  overflow: hidden; width: 150px; height: 150px; border-radius: 50%;background-color: #fff;}
+.cont_me .photo div img {width: 150px; position: relative; left: 3%;}
+.cont_me .photo span {display: block; position: absolute; bottom: 75px; left: 61%; transform: translateX(-50%); width: 200px; text-align: center;}
+.cont_me .cont {width: 350px; position: relative; height: 300px; float: left; margin-top: 50px;}
+.cont_me .cont ul {position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); width: 250px;}
+.cont_me .cont ul li{margin-top: 20px; position: relative; color:white}
+.cont_me .cont ul li>div,.cont_me li>span{display: inline-block;}
+.cont_me .cont ul li div { width: 30px; height: 30px; border-radius: 50%; background-color: #ccc; text-align: center; line-height: 34px;}
+.cont_me .cont ul li span {left: 50px;position: absolute; top: 40%; transform: translateY(-50%);}
 @keyframes wheel{
     0%{top:10%; opacity: 1;}
     100%{top:50%; opacity: 0;}
 }
 
+
+
+
+/*mediaquery*/
+
+/*DISPLAY width 0~960px*/
+@media(max-width:960px){
+.cont_me .wrap {width: 600px; position: relative;}
+.cont_me .name{margin-left: 0; width: 300px;}
+.cont_me .photo{display:none;}
+.cont_me .cont{width: 200px; float: none; position: absolute; right: 0;}
+.cont_me .cont ul{ right: 0;  position: absolute;}
+}
