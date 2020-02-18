@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "maintainker.github.io/port2/static/css/main.b50e0e74.chunk.css",
-    "main.js": "maintainker.github.io/port2/static/js/main.947047b1.chunk.js",
-    "main.js.map": "maintainker.github.io/port2/static/js/main.947047b1.chunk.js.map",
-    "runtime-main.js": "maintainker.github.io/port2/static/js/runtime-main.890560c5.js",
-    "runtime-main.js.map": "maintainker.github.io/port2/static/js/runtime-main.890560c5.js.map",
-    "static/js/2.6a8d4355.chunk.js": "maintainker.github.io/port2/static/js/2.6a8d4355.chunk.js",
-    "static/js/2.6a8d4355.chunk.js.map": "maintainker.github.io/port2/static/js/2.6a8d4355.chunk.js.map",
-    "index.html": "maintainker.github.io/port2/index.html",
-    "precache-manifest.3c1a707c00003273b3821d66374c31b0.js": "maintainker.github.io/port2/precache-manifest.3c1a707c00003273b3821d66374c31b0.js",
-    "service-worker.js": "maintainker.github.io/port2/service-worker.js",
-    "static/css/main.b50e0e74.chunk.css.map": "maintainker.github.io/port2/static/css/main.b50e0e74.chunk.css.map",
-    "static/js/2.6a8d4355.chunk.js.LICENSE.txt": "maintainker.github.io/port2/static/js/2.6a8d4355.chunk.js.LICENSE.txt",
-    "static/media/jung.jpg": "maintainker.github.io/port2/static/media/jung.11f18a77.jpg",
-    "static/media/mockup3-247.png": "maintainker.github.io/port2/static/media/mockup3-247.22c57099.png",
-    "static/media/mockup3.jpg": "maintainker.github.io/port2/static/media/mockup3.b9630ccf.jpg",
-    "static/media/standard1.png": "maintainker.github.io/port2/static/media/standard1.cc11904c.png"
+    "main.css": "/port2/static/css/main.b50e0e74.chunk.css",
+    "main.js": "/port2/static/js/main.c27b4818.chunk.js",
+    "main.js.map": "/port2/static/js/main.c27b4818.chunk.js.map",
+    "runtime-main.js": "/port2/static/js/runtime-main.a771393f.js",
+    "runtime-main.js.map": "/port2/static/js/runtime-main.a771393f.js.map",
+    "static/js/2.9593a4dc.chunk.js": "/port2/static/js/2.9593a4dc.chunk.js",
+    "static/js/2.9593a4dc.chunk.js.map": "/port2/static/js/2.9593a4dc.chunk.js.map",
+    "index.html": "/port2/index.html",
+    "precache-manifest.ac3a19e43eec58f620fd8e3777f2ac5f.js": "/port2/precache-manifest.ac3a19e43eec58f620fd8e3777f2ac5f.js",
+    "service-worker.js": "/port2/service-worker.js",
+    "static/css/main.b50e0e74.chunk.css.map": "/port2/static/css/main.b50e0e74.chunk.css.map",
+    "static/js/2.9593a4dc.chunk.js.LICENSE.txt": "/port2/static/js/2.9593a4dc.chunk.js.LICENSE.txt",
+    "static/media/jung.jpg": "/port2/static/media/jung.11f18a77.jpg",
+    "static/media/mockup3-247.png": "/port2/static/media/mockup3-247.22c57099.png",
+    "static/media/mockup3.jpg": "/port2/static/media/mockup3.b9630ccf.jpg",
+    "static/media/standard1.png": "/port2/static/media/standard1.cc11904c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.890560c5.js",
-    "static/js/2.6a8d4355.chunk.js",
+    "static/js/runtime-main.a771393f.js",
+    "static/js/2.9593a4dc.chunk.js",
     "static/css/main.b50e0e74.chunk.css",
-    "static/js/main.947047b1.chunk.js"
+    "static/js/main.c27b4818.chunk.js"
   ]
 }
