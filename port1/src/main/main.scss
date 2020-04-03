@@ -1,0 +1,31 @@
+*{margin: 0;padding: 0; list-style: none;font-family: 'Noto Sans', sans-serif; box-sizing: border-box;}
+a {text-decoration: none; color: #000;}
+
+#main{ position: relative;width: 100%;height: 100vh; }
+#main .main_tit{text-align: center;color: #fff; display :block; width: 50vw; height: 40vh; position: absolute;top: 50%; left: 50%; transform: translate(-50%,-50%);}
+#main .main_tit header {font-size: 50px;padding-top: 70px;}
+#main .main_tit span {font-size: 20px;}
+#main .main_tit div {line-height: 43px; color: black; position: absolute;top: 20px; right: 20px; width: 40px; height: 40px; border-radius: 50%; background-color: #ffd94a;}
+#main .main_tit ul{display: block; width: 100%; position: absolute; bottom: 0; margin: 0 auto;}
+#main .main_tit ul li:hover a{color: #888;}
+#main .main_tit ul li{display: inline-block; padding: 0 150px 50px 0; font-size: 20px; cursor: pointer;}
+#main .main_tit ul li:last-child{ padding-right:  0;}
+#main .main_tit ul a {color: #fff; transition: 0.3s;}
+#main .icons{color: #fff; font-size: 40px;}
+#main .icons #kakao{position: relative; top:-2px; height: 37px; width: 37px; border-radius: 50%; background-color: #fff; text-align: center; line-height: 38px; color: #000; font-weight: bold;}
+#main .icons {position: absolute; bottom: 20px; display: block; left: 50%; transform: translateX(-50%);}
+#main .icons li {display: inline-block; padding-right: 20px;}
+#main .icons li:last-child { right: 0; padding-right: 0;}
+
+                                                                        
+
+/*mediaquery*/
+
+/*DISPLAY width 0~1024px*/
+@media(max-width:1024px){
+    #main .main_tit {width: 400px;}
+    #main .main_tit header{font-size: 37px;}
+    #main .main_tit ul li{padding: 0 70px 50px 0; }
+    #main .main_tit ul li:last-child{ padding-right:  0;}
+
+}
