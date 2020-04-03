@@ -16,7 +16,8 @@
     100%{top:50%; opacity: 0;}
 }
 
-#about .char {width: 100%; height: calc(100vh - 150px); position: relative; padding-top: 200px;}
+
+#about .char {width: 100%; height: calc(100vh - 150px); position: relative; margin-top: 200px;}
 #about .char>div {position: absolute; left: 50%; top: 50%; width: 900px; height: 450px; text-align: center; transform: translate(-50%,-50%);}
 #about .char div .character {position: absolute; left: 0; top: 10%;}
 #about .char div ul li:first-child{color:#ffd94a; font-size: 70px; padding-bottom: 20px;}
