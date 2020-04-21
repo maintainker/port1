@@ -1,5 +1,4 @@
 import React from "react";
-import stand_img1 from'../img/standard1.png';
 
 const Standard =() =>{
 
@@ -9,7 +8,7 @@ const Standard =() =>{
 
     return (<div className="standard">
         <section>
-            <img className="img1" src={stand_img1} alt="standard1"/>
+            <img className="img1" src='./img/standard1.png' alt="standard1"/>
         </section>
         <nav>
             <div className="card">

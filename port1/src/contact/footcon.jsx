@@ -1,5 +1,4 @@
 import React from "react";
-import Jung from "../img/jung.jpg"
 import {MdEmail, MdPhone, MdLocationOn} from "react-icons/md";
 
 
@@ -11,7 +10,7 @@ const FootCon =()=>{
                 <span>Young</span><br/>
                 <span>Hwan</span>
             </div>
-            <div className="photo"><div><img src={Jung} alt="증명사진"/></div><span>Front-End Developer</span></div>
+            <div className="photo"><div><img src="./img/jung.jpg" alt="증명사진"/></div><span>Front-End Developer</span></div>
             <div className="cont">
                 <ul>
                     <li>

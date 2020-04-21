@@ -8,6 +8,7 @@ import AnimaMain from './animation/animaMain';
 import'./main.scss';
 import styled from 'styled-components';
 import Footer from '../footer'
+import PosterShopping from './reactShoping';
 
 const PortMain =({click_menu})=>{
     const ReactMain = styled.div`
@@ -28,8 +29,9 @@ const PortMain =({click_menu})=>{
             <Standard />
             <Responsible />
             <AnimaMain />
-        </div>
             <ReactMain>React Project</ReactMain>
+            <PosterShopping />
+        </div>
             <Footer name={"portfolio"} click_menu={click_menu}></Footer>
     </div>);
 }

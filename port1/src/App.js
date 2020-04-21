@@ -10,9 +10,8 @@ import Contact from "./contact/contact"
 function App() {
   const [disp,set_disp]=useState("main");
   const click_menu = useCallback( (value) =>{
-    window.pageYOffset=0;
     set_disp(value);
-    console.log(disp);
+    document.querySelector(".App").scrollTo(0,0);
   },[disp]);
 
  
