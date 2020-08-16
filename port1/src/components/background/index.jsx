@@ -4,7 +4,7 @@ import './main.scss';
 
 
 
-const Bgc =() =>{
+const BackGround =() =>{
     
 // color = white /yellow
 // left, right => vw
@@ -39,4 +39,4 @@ const Bgc =() =>{
     </div>
 }
 
-export default Bgc;
+export default BackGround;
