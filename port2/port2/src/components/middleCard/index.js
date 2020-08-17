@@ -42,7 +42,10 @@ const Card = styled.section`
         vertical-align:top;
         span{
             display: block;
-            text-align:center;
+            text-align: right;
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
         }
     }
 `;

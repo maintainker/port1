@@ -1,6 +1,6 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import './header.scss';
-import { useState } from 'react';
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
 
 const Header =({click_menu})=>{
@@ -37,7 +37,7 @@ const Header =({click_menu})=>{
 
     return (
     <div id='header'>
-        <p className='italic' onClick={()=>click_menu("main")}>Sul’s Portfolio</p>
+        <p className='italic'><Link to="/">Sul’s Portfolio</Link></p>
         <div className={active} onClick={()=>onclick()}>
             <div className='fall_down'  />
         </div>

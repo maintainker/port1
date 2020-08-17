@@ -5,6 +5,7 @@ import {
     Switch,
 } from 'react-router-dom';
 import Main from "./pages/mainpage";
+import About from "./pages/aboutpage";
 
 
 const Routes = () => {
@@ -12,7 +13,8 @@ const Routes = () => {
     <>
         <Router>
             <Switch>
-                <Route path="/"component={Main}/>
+                <Route exact path="/"component={Main}/>
+                <Route path="/about"component={About}/>
             </Switch>
         </Router>
     </>);

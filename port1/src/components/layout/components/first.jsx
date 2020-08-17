@@ -1,14 +1,14 @@
 import React from "react";
-import "./main.scss";
+import "./first.scss";
 import { FaAngleDown } from "react-icons/fa";
 
-const Main =() =>{
+const Firstpage =({children,script}) =>{
 
 
     return (<div className ="coding_main">
         <div className="title">
-            <h1>About</h1>
-            <span>introducing me</span>
+            <h1>{children}</h1>
+            <span>{script}</span>
         </div>
 
         <div className = "mouse"> 
@@ -23,4 +23,4 @@ const Main =() =>{
 }
 
 
-export default Main ;
+export default Firstpage ;

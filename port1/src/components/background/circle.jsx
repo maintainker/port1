@@ -6,10 +6,9 @@ const Circle =(color)=>{
     const [c_color,set_color]=useState("rgb(255, 217, 74)");
     const [cl_name]=useState("ball deg"+color.deg)
     //size
-    if(color.children === "1"&&size!=="2.5px"){set_size("2.5px");} 
-    else if(color.children === "2"&&size!=="9px"){set_size("9px"); } 
-    else if(color.children === "3"&&size!=="15px"){set_size("15px"); } 
-
+    if( String(color.children) === "1" && size!=="2.5px"){set_size("2.5px");} 
+    else if( String(color.children) === "2" && size!=="9px"){set_size("9px"); } 
+    else if( String(color.children) === "3" && size!=="15px"){set_size("15px"); } 
 
     let length = color.length;
     if (length===undefined){length=30;}
@@ -29,7 +28,7 @@ const Circle =(color)=>{
     if(color.color==="yellow"&&c_color!=="rgb(255,217,74)"){set_color("rgb(255,217,74)");}
     else if(color.color==="white"&&c_color!=="rgb(255,255,255)"){set_color("rgb(255,255,255)");}
 
-    const Bgc= styled.div`
+    const BackgroundCircle= styled.div`
         animation:${move} ${time}s ease-in-out infinite;
         background: ${c_color};
         left: ${color.left+"vw"};
@@ -39,7 +38,7 @@ const Circle =(color)=>{
         z-index:1;`
         
     return (
-        <Bgc className={cl_name}></Bgc>
+        <BackgroundCircle className={cl_name}></BackgroundCircle>
    );
 
 }
