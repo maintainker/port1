@@ -39,9 +39,58 @@ content: ''; position: absolute;left: 0; bottom: 0; width: 100%; height: 5px; ba
 #footer .prev {position: absolute; left: 50px; top: 50%; transform: translateY(-50%); cursor: pointer;}
 #footer .next {position: absolute; right: 50px; top: 50%; transform: translateY(-50%); cursor: pointer;}
 #footer .arrows{position: relative; top:4px; display: inline-block;}
-#footer .arrows.top{position: absolute; top: 50%; left: 50%; transform: rotate(90deg) translate(-50%,50%); color: #fff; width: 60px; height: 60px; border-radius: 50%; border: 3px solid #fff;text-align: center; line-height: 62.5px;}
+#footer .arrows.top{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%) rotate(90deg); color: #fff; width: 60px; height: 60px; border-radius: 50%; border: 3px solid #fff;text-align: center; line-height: 54px;}
 
 
 
 
 
+
+#about { width: 100%; background-color: #000;}
+#about .italic{color:#ffd94a; font-size: 70px; }
+#about .firstPage {position: relative; height: calc(100vh - 150px); margin-top: 150px; width: 100%;}
+#about .firstPage .title {display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-80%); text-align: center;}
+#about .firstPage .title h1{font-size: 90px; color: white; }
+#about .firstPage .title span{color: white; font-size: 27px; }
+
+#about .firstPage .mouse{position: absolute; left: 50%; bottom: 20px; transform: translateX(-50%); color: #fff; text-align: center;}
+#about .firstPage .mouse .out{width: 20px; position: absolute; left: 50%; transform: translateX(-50%); bottom: 70px;  height: 30px; border: 3px solid #888; border-radius: 20px 20px 10px 10px;}
+#about .firstPage .mouse .out::before {position: absolute;left: 50%; transform: translateX(-50%); top: 10%; animation: wheel 2s ease-in-out 0.5s infinite;  content: "";width: 3px; height: 10px; background-color: #888;}
+#about .firstPage .mouse .out::after {position: absolute;left: 50%; transform: translateX(-50%); top: -10px;  content: "";width: 3px; height: 10px; background-color: #888;}
+#about .firstPage .mouse span {top: -20px; left: 50%; transform: translateX(-50%); display: block; position: absolute; font-size: 40px; font-weight: 200;}
+
+@keyframes wheel{
+    0%{top:10%; opacity: 1;}
+    100%{top:50%; opacity: 0;}
+}
+
+
+#about .skill .box ul {color: white; width: 200px; padding: 0 50px; height: 100%; float: left; text-align: left;}
+#about .skill .box ul:last-child{padding-left: 70px;}
+
+
+#about .char {width: 100%; height: calc(100vh - 150px); position: relative; margin-top: 200px;}
+#about .char>div {position: absolute; left: 50%; top: 50%; width: 900px; height: 450px; text-align: center; transform: translate(-50%,-50%);}
+#about .char div .character {position: absolute; left: 0; top: 10%;}
+#about .char div ul li:first-child{color:#ffd94a; font-size: 70px; padding-bottom: 20px;}
+#about .char div ul li{color:#fff;font-size: 30px;}
+#about .char div .habby {position: absolute; left: 50%; top: 0; transform: translate(-50%,-10%);}
+#about .char div .concern {position: absolute; right: 0; top: 10%;}
+
+
+
+/*mediaquery*/
+
+/*DISPLAY width 0~1220px*/
+@media(max-width:1220px){
+
+    #about .skill{padding-top: 150px;}
+    #about .skill .box { width: 600px; height: auto; margin-top: 70px;}
+    #about .skill .box>div {margin-bottom: 100px;}
+}
+
+/*DISPLAY width 0~960px*/
+@media(max-width:960px){
+#about .char div{width: 650px;}
+#about .char div div {width: 200px;}
+}

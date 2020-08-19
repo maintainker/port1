@@ -4,14 +4,11 @@ import "./circle.scss"
 
 const Circle =({skill,count})=>{
 
-    const Cir = styled.div`
-        position:absolute;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
+    const Cir = styled.section`
         height:200px;
         width:200px;
         border : 10px solid white;
+        display:inline-block;
         border-radius :50%;
     `;
     

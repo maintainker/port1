@@ -10,7 +10,7 @@ const Main =({history})=>{
     const menu_list =["about","portfolio","contact"];
     console.log(history);
     const menu =  menu_list.map((v)=>{
-        return(<li key={v}><Link to={v}>{v}</Link></li>);
+        return(<Link to={v}><li key={v}>{v}</li></Link>);
     });
 
 
