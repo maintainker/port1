@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef} from "react";
 import "../assets/css/mainpage.scss";
 import { MdReplay } from "react-icons/md";
 import { FaGithub} from "react-icons/fa";
@@ -10,7 +10,7 @@ const Main =({history})=>{
     const menu_list =["about","portfolio","contact"];
     console.log(history);
     const menu =  menu_list.map((v)=>{
-        return(<Link to={v}><li key={v}>{v}</li></Link>);
+        return(<Link key={v} to={v}><li >{v}</li></Link>);
     });
 
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef} from "react";
 import Layout from "../components/layout";
 import styled from "styled-components";
 import Circle from "../components/circle"
@@ -56,10 +56,12 @@ const Skill = styled.section`
 const About = ({history}) =>{
     const script = "introducing me";
     const page = "about";
-    return (<div id ="about" >
-        <Layout script={script} page={page}>
-            <Iam>
-                <header className="italic">Who Is SSUL?</header>
+    const nextRef = useRef();
+    return (<div id ="about" style={{scrollBehavior: "smooth"}} >
+        <Layout script={script} page={page} nextRef={nextRef}>
+            <Iam ref={nextRef}>
+                
+            <header className="italic">Who Is SSUL?</header>
                 <article>
                     <span>
                         안녕하세요. 2020/4/1에 시작한 늦깎이 웹 프론트엔드 개발자 설영환입니다.<br/>
