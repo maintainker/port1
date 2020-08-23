@@ -5,7 +5,8 @@ import {
     Switch,
 } from 'react-router-dom';
 import Main from "./pages/mainpage";
-import About from "./pages/aboutpage";
+import AboutContents from "./pages/aboutpage";
+import PortfolioContens from "./pages/portpage"
 import Global from "./assets/style/GlobalStyle";
 
 
@@ -16,7 +17,8 @@ const Routes = () => {
         <Router>
             <Switch>
                 <Route exact path="/"component={Main}/>
-                <Route path="/about"component={About}/>
+                <Route path="/about"component={AboutContents}/>
+                <Route path="/portfolio"component={PortfolioContens}/>
             </Switch>
         </Router>
     </>);

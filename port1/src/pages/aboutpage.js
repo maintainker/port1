@@ -1,7 +1,7 @@
 import React,{useRef} from "react";
 import Layout from "../components/layout";
 import styled from "styled-components";
-import Circle from "../components/circle"
+import { useEffect } from "react";
 
 const Iam = styled.section`
     width:100%;
@@ -10,6 +10,8 @@ const Iam = styled.section`
     header{
         margin-top: 100px;
         text-align:center;
+        color:#ffd94a;
+        font-size:70px;
         
     }
     article{
@@ -17,7 +19,6 @@ const Iam = styled.section`
         margin:100px auto 0;
         span,a{
             color:#fff;
-            
         }
     }
 `;
@@ -26,6 +27,56 @@ const Skill = styled.section`
     height: calc(90vh - 150px); 
     position: relative; 
     text-align: center;
+    header{
+        color:#ffd94a;
+        font-size:70px;
+        margin-bottom:40px;
+    }
+    .skillStack{
+        display:block;
+        width:1070px; 
+        margin:0 auto;
+        color: #fff;
+        li{
+            display: flex;
+            width:100%;
+            position:relative;
+            .skillName{
+                display: flex;
+                width : 150px;
+                height:40px;
+                line-height:40px;
+            }
+            .skillBarGround{
+                position:absolute;
+                left:150px;
+                top:50%;
+                transform:translateY(-50%);
+                display: flex;
+                overflow:hidden;
+                box-sizing:border-box;
+                border:1px #ddd solid;
+                height: 20px;
+                width:calc(100% - 150px);
+                border-radius:5px;
+                .skillBar{
+                    position:absolute;
+                    left:-100%;
+                    background:linear-gradient(90deg,#ddd,#ffd94a);
+                    line-height:18px;
+                    box-sizing:border-box;
+                    padding-right:25px;
+                    text-align:right;
+                    color:#000;
+                    transition:3s;
+                    border-radius:5px;
+                }
+            }
+        }
+        &.active li .skillBarGround .skillBar{
+            left:0;
+        }
+    }
     .box{
         position: relative; 
         top: 35%; 
@@ -43,24 +94,43 @@ const Skill = styled.section`
             margin-left:0;
         }
     }
-    div{
-        position: relative; 
-        display: inline-block;
-        width: 300px; 
-        height: 210px;
-    }
 `;
 
 
 
-const About = ({history}) =>{
+const AboutContents = ({history}) =>{
     const script = "introducing me";
     const page = "about";
     const nextRef = useRef();
-    return (<div id ="about" style={{scrollBehavior: "smooth"}} >
+    const skillUl = useRef();
+    useEffect(()=>{
+        nextRef.current.addEventListener("wheel",()=>{
+            if(document.documentElement.scrollTop>900){
+                if(!skillUl.current.classList.contains("active")){
+                    skillUl.current.classList.add("active")
+                };
+            }
+        });
+    })
+    const skillList = [
+        {name:"HTML5",percent : 90},
+        {name:"Css3",percent : 85},
+        {name:"Javascript/ES6",percent : 95},
+        {name:"React",percent : 90},
+        {name:"Typescript",percent : 70},
+    ];
+    const skillStack = skillList.map((v)=>{
+        return(
+        <li key={v.name}>
+            <div className="skillName">{v.name}</div>
+            <div className="skillBarGround"><div className="skillBar" style={{width:`${v.percent}%` }}><span>{v.percent}%</span></div></div>
+        </li>)
+    });
+
+    return (
+    <div id ="about" style={{scrollBehavior: "smooth"}} >
         <Layout script={script} page={page} nextRef={nextRef}>
             <Iam ref={nextRef}>
-                
             <header className="italic">Who Is SSUL?</header>
                 <article>
                     <span>
@@ -79,20 +149,21 @@ const About = ({history}) =>{
 
                     </span>
                 </article>
-            </Iam>
+            </Iam>"
+            <section className="career">
+                <header className="italic">Career</header>
+                <div></div>
+            </section>
             <Skill className="skill">
-                <span className="italic">Skill</span>
-                <div className="box">
-                    <Circle skill="CSS" count="90"/>
-                    <Circle skill="JS" count="95"/>
-                    <Circle skill="React" count="90"/>
-                    <Circle skill="TS" count="85"/>
-                </div>
+                <header className="italic">Skill</header>
+                <ul className="skillStack" ref={skillUl}>
+                    {skillStack}
+                </ul>
+                
             </Skill>
         </Layout>
-
     </div>);
 }
 
 
-export default About;
+export default AboutContents;

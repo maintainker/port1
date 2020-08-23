@@ -1,5 +1,5 @@
-import React,{useRef} from "react";
-import "../assets/css/mainpage.scss";
+import React from "react";
+import "../assets/style/mainpage.scss";
 import { MdReplay } from "react-icons/md";
 import { FaGithub} from "react-icons/fa";
 import { FiBook } from "react-icons/fi";
