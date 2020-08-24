@@ -98,7 +98,7 @@ const Skill = styled.section`
 
 
 
-const AboutContents = ({history}) =>{
+const AboutContents = () =>{
     const script = "introducing me";
     const page = "about";
     const nextRef = useRef();

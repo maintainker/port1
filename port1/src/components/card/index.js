@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect,useRef } from "react"
 import styled from "styled-components";
 
 const Cardstyle = styled.div`
@@ -90,12 +90,17 @@ const Cardstyle = styled.div`
 `;
 
 
-const Card = ()=>{
-    const title = "Encrypt/Decrypt"
+const Card = ({openDialog,imgUrl,title,children})=>{
+    const cardRef = useRef();
+    useEffect(()=>{
+        cardRef.current.addEventListener("click",()=>{
+            openDialog(title);
+        })
+    },[openDialog,title]);
     return (
-        <Cardstyle>
+        <Cardstyle imgUrl={imgUrl} ref={cardRef}>
             <div className="contents">
-                <p>{title}</p>
+                <p>{children}</p>
             </div>
             <div className="dim"></div>
             <div className="border"></div>

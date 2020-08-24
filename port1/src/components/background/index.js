@@ -1,8 +1,16 @@
 import React from 'react';
+import styled from "styled-components";
 import Circle from './circle';
 import circle from './circleslist'
-import './main.scss';
-
+const BackSide = styled.div`
+    background-color: #000; 
+    width: 100%; 
+    height: 100vh;
+    position: fixed; 
+    z-index:—30;
+    top: 0; 
+    left: 0;
+`;
 
 
 const BackGround =() =>{
@@ -18,9 +26,9 @@ const BackGround =() =>{
         <Circle key={count++} color={v.color} left={v.x} top={v.y} deg={v.degree}>{v.size}</Circle>
         )
     })
-    return <div id='bg'>
+    return <BackSide>
         {circles}
-    </div>
+    </BackSide>
 }
 
 export default BackGround;

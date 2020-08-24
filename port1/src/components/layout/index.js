@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import { MdArrowBack,MdArrowForward } from "react-icons/md";
 import { FaAngleDown } from "react-icons/fa";
 import BackGround from "../background"
+import Dialog from "../dialog"
 import layoutStyle from "../../assets/style/layoutStyle";
 const { Footer,Arrow,Header,SlideMenu,FirstPage} = layoutStyle;
-console.log(Footer)
 
 
-const Layout = ({page,script,children,nextRef}) =>{
+const Layout = ({page,script,children,dialogContent}) =>{
     const pageList = {
         about :{prev:"contact",next:"portfolio"},
         portfolio :{prev:"about",next:"contact"},
@@ -32,6 +32,7 @@ const Layout = ({page,script,children,nextRef}) =>{
         window.scrollTo(0,0);
     }
     useEffect(()=>{
+        
         toTheTop();
         quickBtn.current.addEventListener("click",(e)=>{
             e.preventDefault();
@@ -63,6 +64,7 @@ const Layout = ({page,script,children,nextRef}) =>{
     return(
     <>
         <BackGround/>
+        <Dialog></Dialog>
         <Header>
             <div className="container">
                 <section className="menuOpen" ref={quickBtn}>
