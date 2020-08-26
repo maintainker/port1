@@ -16,7 +16,8 @@ const Cardstyle = styled.div`
         left:0;
         width:100%;
         height:100%;
-        background:rgb(4, 2, 126);
+        background:${(v)=> v.imgUrl? "no-repeat center url("+v.imgUrl+")":"rgb(4, 2, 126)"};
+		background-size : 100% 120%;
         text-align:center;
         p{
             display:none;
@@ -90,7 +91,7 @@ const Cardstyle = styled.div`
 `;
 
 
-const Card = ({openDialog,imgUrl,title,children})=>{
+const Card = ({openDialog,title,children})=>{
     const cardRef = useRef();
     useEffect(()=>{
         cardRef.current.addEventListener("click",()=>{
@@ -98,9 +99,9 @@ const Card = ({openDialog,imgUrl,title,children})=>{
         })
     },[openDialog,title]);
     return (
-        <Cardstyle imgUrl={imgUrl} ref={cardRef}>
+        <Cardstyle imgUrl={children.img} ref={cardRef}>
             <div className="contents">
-                <p>{children}</p>
+                <p>{children.title}</p>
             </div>
             <div className="dim"></div>
             <div className="border"></div>

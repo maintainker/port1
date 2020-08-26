@@ -319,10 +319,67 @@ const FirstPage= styled.section`
     }
 
 `;
-
+const DetailPort = styled.div`
+    width:600px;
+    height: 500px;
+    text-align:center;
+    box-sizing: border-box;
+    padding:30px 50px;
+    h1{
+        padding-bottom: 40px;
+    }
+    img{
+        display: inline-block;
+        width:200px;
+        height:300px;
+    }
+    .detailScript{
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 0 20px 0 50px;
+        width:300px;
+        height:300px;
+        vertical-align:top;
+        text-align:left;
+        .close{
+            cursor:pointer;
+            width:35px;
+            height:35px;
+            position:absolute;
+            top:30px;
+            right:50px;
+            &::before{
+                content:"";
+                width:35px;
+                height:1px;
+                background-color:#000;
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%) rotate(45deg);
+            }
+            &::after{
+                content:"";
+                width:35px;
+                height:1px;
+                background-color:#000;
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%) rotate(-45deg);
+            }
+        }
+        h2{
+            margin-bottom:10px
+        }
+        .description,.link{
+            margin-top:30px;
+        }
+    }
+`;
 
 const layoutStyle = {
-    Footer,Arrow,sliceBar,Header,SlideMenu,FirstPage
+    Footer,Arrow,sliceBar,Header,SlideMenu,FirstPage,DetailPort
 }
 
 

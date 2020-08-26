@@ -5,10 +5,11 @@ import { FaAngleDown } from "react-icons/fa";
 import BackGround from "../background"
 import Dialog from "../dialog"
 import layoutStyle from "../../assets/style/layoutStyle";
-const { Footer,Arrow,Header,SlideMenu,FirstPage} = layoutStyle;
+const { Footer,Arrow,Header,SlideMenu,FirstPage,DetailPort} = layoutStyle;
 
 
-const Layout = ({page,script,children,dialogContent}) =>{
+const Layout = ({page,script,children,dialogContent,closeDialog}) =>{
+
     const pageList = {
         about :{prev:"contact",next:"portfolio"},
         portfolio :{prev:"about",next:"contact"},
@@ -59,12 +60,37 @@ const Layout = ({page,script,children,dialogContent}) =>{
             e.preventDefault();
             window.open(title[v]);
         }}><span>{v}</span></a></li>);
+//dialog{title,skill,link,img,script}
 
+        const DialogComponent= ()=>{
+            return(
+            <DetailPort>
+                <h1>{dialogContent.title}</h1>
+                <img src={dialogContent.img} alt="사진"/>
+                <div className="detailScript">
+                    <div className="close" onClick={closeDialog}></div>
+                    <div className="skill">
+                        <h2>Skill</h2>
+                        <span>{dialogContent.skill}</span>
+                    </div>
+                    <div className="description">
+                        <h2>설명</h2>
+                        <span>
+                            {dialogContent.script}
+                        </span>
+                    </div>
+                    <div className="link">
+                        <a href={dialogContent.link}>Link(click)</a>
+                    </div>
+                </div>
+            </DetailPort>);
+        }
+        
 
     return(
     <>
         <BackGround/>
-        <Dialog></Dialog>
+    <Dialog closeDialog={closeDialog}>{dialogContent?<DialogComponent/>:null}</Dialog>
         <Header>
             <div className="container">
                 <section className="menuOpen" ref={quickBtn}>
