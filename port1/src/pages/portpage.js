@@ -71,7 +71,7 @@ const cardList ={
         category:"Study / Project",
         title:"reactStudy",
         skill:"ReactJS",
-        link:"",
+        link:"https://velog.io/@maintainker/%EC%99%9C-%EB%A6%AC%EC%97%91%ED%8A%B8%EC%9D%B8%EA%B0%80",
         img:"",
         script:"당근마켓을 하며 알고있다고 생각했던 React의 많은 부족한 부분을 발견하여 현재 8월 초부터 리액트 스터디를 시작하여 꾸준히 공부해나가고 있습니다."
     },

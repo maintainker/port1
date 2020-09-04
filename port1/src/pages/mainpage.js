@@ -6,9 +6,8 @@ import { FiBook } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import BackGround from "../components/background"
 
-const Main =({history})=>{
+const Main =()=>{
     const menu_list =["about","portfolio","contact"];
-    console.log(history);
     const menu =  menu_list.map((v)=>{
         return(<Link key={v} to={v}><li >{v}</li></Link>);
     });

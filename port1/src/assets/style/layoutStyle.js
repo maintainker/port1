@@ -8,8 +8,10 @@ const Footer = styled.footer`
     margin-top: 50px;
     .arrows{
         position: absolute; 
+        cursor:pointer;
         top: 50px; 
         left: 50%; 
+        box-sizing:border-box;
         transform: translate(-50%,-50%) rotate(90deg); 
         color: #fff; 
         width: 60px; 
@@ -17,7 +19,7 @@ const Footer = styled.footer`
         border-radius: 50%; 
         border: 3px solid #fff;
         text-align: center; 
-        line-height: 54px;
+        line-height: 60px;
     }
     .copyRight{
         position:absolute;
@@ -34,10 +36,11 @@ const Footer = styled.footer`
 const Arrow = styled.div`
         border: 3px solid white;
         border-radius: 37px;
+        box-sizing:border-box;
         height: 70px;
         width: 200px;
         color : white;
-        line-height : 64px;
+        line-height : 70px;
         text-align :center;
         top: 50px; 
         transform: translateY(-50%); 
@@ -320,55 +323,61 @@ const FirstPage= styled.section`
 
 `;
 const DetailPort = styled.div`
-    width:600px;
-    height: 500px;
+    width:500px;
+    height: 650px;
     text-align:center;
     box-sizing: border-box;
-    padding:30px 50px;
-    h1{
-        padding-bottom: 40px;
-    }
+    padding:30px 30px;
     img{
         display: inline-block;
-        width:200px;
-        height:300px;
+        width:400px;
+        height:250px;
+    }
+    .close{
+        cursor:pointer;
+        width:35px;
+        height:35px;
+        position:absolute;
+        top:5px;
+        right:-50px;
+        cursor:pointer;
+        &::before{
+            content:"";
+            width:35px;
+            height:1px;
+            background-color:#fff;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%) rotate(45deg);
+        }
+        &::after{
+            content:"";
+            width:35px;
+            height:1px;
+            background-color:#fff;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%) rotate(-45deg);
+        }
+    }
+    section {
+        margin-top:10px;
     }
     .detailScript{
         display: inline-block;
         box-sizing: border-box;
         padding: 0 20px 0 50px;
-        width:300px;
         height:300px;
         vertical-align:top;
         text-align:left;
-        .close{
-            cursor:pointer;
-            width:35px;
-            height:35px;
-            position:absolute;
-            top:30px;
-            right:50px;
-            &::before{
-                content:"";
-                width:35px;
-                height:1px;
-                background-color:#000;
-                position:absolute;
-                top:50%;
-                left:50%;
-                transform: translate(-50%,-50%) rotate(45deg);
-            }
-            &::after{
-                content:"";
-                width:35px;
-                height:1px;
-                background-color:#000;
-                position:absolute;
-                top:50%;
-                left:50%;
-                transform: translate(-50%,-50%) rotate(-45deg);
-            }
+        h1{
+            text-align:center;
+            font-size:35px;
+            margin-bottom:20px;
         }
+        
         h2{
             margin-bottom:10px
         }

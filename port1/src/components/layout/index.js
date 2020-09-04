@@ -9,7 +9,6 @@ const { Footer,Arrow,Header,SlideMenu,FirstPage,DetailPort} = layoutStyle;
 
 
 const Layout = ({page,script,children,dialogContent,closeDialog}) =>{
-
     const pageList = {
         about :{prev:"contact",next:"portfolio"},
         portfolio :{prev:"about",next:"contact"},
@@ -40,18 +39,6 @@ const Layout = ({page,script,children,dialogContent,closeDialog}) =>{
             quickMenu.current.classList.toggle("active");
         })
         
-        // nowRef.current.addEventListener("wheel",(e)=>{
-            
-        //     if(document.documentElement.scrollTop<nextRef.current.getBoundingClientRect().top && nowScroll<=document.documentElement.scrollTop){
-        //         e.preventDefault();
-        //         window.scrollTo({
-        //             top: nextRef.current.getBoundingClientRect().top-150,
-        //             left: 0,
-        //             behavior: 'smooth'
-        //           });
-        //     }
-        //     nowScroll = document.documentElement.scrollTop;
-        // })
     },[]);
 
 
@@ -60,28 +47,29 @@ const Layout = ({page,script,children,dialogContent,closeDialog}) =>{
             e.preventDefault();
             window.open(title[v]);
         }}><span>{v}</span></a></li>);
-//dialog{title,skill,link,img,script}
 
         const DialogComponent= ()=>{
             return(
             <DetailPort>
-                <h1>{dialogContent.title}</h1>
                 <img src={dialogContent.img} alt="사진"/>
                 <div className="detailScript">
                     <div className="close" onClick={closeDialog}></div>
-                    <div className="skill">
-                        <h2>Skill</h2>
-                        <span>{dialogContent.skill}</span>
-                    </div>
-                    <div className="description">
-                        <h2>설명</h2>
-                        <span>
-                            {dialogContent.script}
-                        </span>
-                    </div>
-                    <div className="link">
-                        <a href={dialogContent.link}>Link(click)</a>
-                    </div>
+                    <section>
+                        <h1>{dialogContent.title}</h1>
+                        <div className="skill">
+                            <h2>Skill</h2>
+                            <span>{dialogContent.skill}</span>
+                        </div>
+                        <div className="description">
+                            <h2>설명</h2>
+                            <span>
+                                {dialogContent.script}
+                            </span>
+                        </div>
+                        <div className="link">
+                            <a href={dialogContent.link}>Link(click)</a>
+                        </div>
+                    </section>
                 </div>
             </DetailPort>);
         }

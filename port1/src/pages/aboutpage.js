@@ -4,22 +4,31 @@ import styled from "styled-components";
 import { useEffect } from "react";
 
 const Iam = styled.section`
-    width:100%;
-    height:100vh;
+    width:1080px;
     position:relative;
+    margin : 0 auto 200px;
     header{
-        margin-top: 100px;
+        margin: 100px 0;
         text-align:center;
         color:#ffd94a;
         font-size:70px;
         
     }
     article{
-        width:1080px;
-        margin:100px auto 0;
-        span,a{
-            color:#fff;
+        color : #fff;
+        vertical-align: top;
+        width:500px;
+        display:inline-block;
+        margin: 50px 0 0 0;
+        h3{
+            font-size:25px;
+            text-align:center;
+            margin-bottom:30px;
         }
+        li{
+            margin-bottom:10px;
+        }
+
     }
 `;
 const Skill = styled.section`
@@ -38,6 +47,7 @@ const Skill = styled.section`
         margin:0 auto;
         color: #fff;
         li{
+            margin-bottom:20px;
             display: flex;
             width:100%;
             position:relative;
@@ -49,6 +59,7 @@ const Skill = styled.section`
             }
             .skillBarGround{
                 position:absolute;
+                box-sizing:border-box;
                 left:150px;
                 top:50%;
                 transform:translateY(-50%);
@@ -61,7 +72,8 @@ const Skill = styled.section`
                 border-radius:5px;
                 .skillBar{
                     position:absolute;
-                    left:-100%;
+                    left:0;
+                    height:100%;
                     background:linear-gradient(90deg,#ddd,#ffd94a);
                     line-height:18px;
                     box-sizing:border-box;
@@ -70,11 +82,14 @@ const Skill = styled.section`
                     color:#000;
                     transition:3s;
                     border-radius:5px;
+                    span{
+                        position: absolute;
+                        top: 50%;
+                        right: 20px;
+                        transform: translateY(calc(-50% + 2px));
+                    }
                 }
             }
-        }
-        &.active li .skillBarGround .skillBar{
-            left:0;
         }
     }
     .box{
@@ -104,20 +119,17 @@ const AboutContents = () =>{
     const nextRef = useRef();
     const skillUl = useRef();
     useEffect(()=>{
-        nextRef.current.addEventListener("wheel",()=>{
-            if(document.documentElement.scrollTop>900){
-                if(!skillUl.current.classList.contains("active")){
-                    skillUl.current.classList.add("active")
-                };
-            }
-        });
+        
     })
     const skillList = [
         {name:"HTML5",percent : 90},
         {name:"Css3",percent : 85},
         {name:"Javascript/ES6",percent : 95},
         {name:"React",percent : 90},
-        {name:"Typescript",percent : 70},
+        {name:"Typescript",percent : 85},
+        {name:"Redux",percent : 80},
+        {name:"JAVA",percent : 80},
+        {name:"Algorithm",percent : 85},
     ];
     const skillStack = skillList.map((v)=>{
         return(
@@ -132,22 +144,25 @@ const AboutContents = () =>{
         <Layout script={script} page={page} nextRef={nextRef}>
             <Iam ref={nextRef}>
             <header className="italic">Who Is SSUL?</header>
-                <article>
+                <article style ={{marginRight:"70px"}}>
+                    <h3>I AM</h3>
                     <span>
-                        안녕하세요. 2020/4/1에 시작한 늦깎이 웹 프론트엔드 개발자 설영환입니다.<br/>
-                        대학생 때 알바부터 시작한 강사라는 직업이 저에게는 할수 있는 유일한 일이되어 7년간 해오게 되었습니다.<br/>
-                        하지만 어느순간부터는 저는 평생 이일을 할수 있을지는 의문을 가지게 되어 방황을 잠깐하였고 다른일을 찾으려 많은 노력을 했습니다.<br/>
-                        저에게 미래가 있는 일을 찾아보았고 제가 대학생때 제일 재미있게 했던 c언어의 기억으로 2019년 11월부터 HTML부터 시작하게 되었습니다. <br/>
-                        그리고 2019년 대학교를 재입학으로 다시 다니게 되어 1년간 네트워크 위주의 수업을 듣고 
-                        2020년 2월 졸업을 할수 있었습니다. <br/>현재는 4월부터 NSHC에 입사하여 웹 보안부서인 Open Web nFiler에서 웹 보안 엔지니어이자 개발자 업무로써 주로 고객사 측의 View에 관련된 issue 뿐만아니라 자바, 암호학등 공부를 
-                        열심히 하고있습니다. <br/>회사에서는 기존의 서버에서 html tag를 내려주어 인라인으로 모든 css가 정해진 방식을 탈피하여 고객이 css를 조정가능한 키패드를 제작 하는 프로젝트를 OJT세미나로써 발표했습니다.
-                        이후 기획부터 제작 테스트 제가 모두 담당하였고 9월 배포를 위해 개발중에 있습니다. <br/>추가적으로 회사에서는 저를 좋게 봐주어 1~2주에 한번씩 팀내 세미나를 주최하여 웹 보안(Javascript)에서의 암호화 복호화 방법을 이용한 인증서 모듈과 연동방법등을 발표하고 있습니다.<br/>
-                        회사가 끝나도고 전문성을 갖추려고 지속적으로 공부하여 저희 사수님께서 본인보다 자바스크립트 개발은 더 잘한다고 말해주고 개발쪽은 믿어주실 정도로 열심히 하려고 노력중입니다. <br/>
-                        
-                        추가적으로는 알고리즘 스터디를 이제 막 종료하고, React 스터디를 꾸준히 하고있습니다. 현재 React에 typescript를 도입하려 노력중에 있습니다. 그리고 React로 당근마켓 프로젝트도 따로 하고있습니다. <br/>
-                        자료구조 알고리즘 스터디를 통해 공부한 내용은 꾸준히 블로그(<strong><a href="https://velog.io/@maintainker">https://velog.io/@maintainker</a></strong>)에 작성하려고 노력하고 있습니다.
-
+                        저의 좌우명은 일신 우일신 입니다. 매일 하루하루 어제보다 발전하는 사람이 되자라는 생각으로 매일 저를 단련하고 
+                        실력을 올려서 더 나은 사람이 되고자 매일 노력하고 있습니다. 
+                        작년부터 Html부터 시작하여 현재 리액트로 팀 프로젝트를 하고 있고, 이번에 기회를 얻어 우아한 테크러닝에 React + Typescript를
+                        적용한 강의를 들으며 현재는 react 프로젝트에 타입스크립트를 도입하여 하고있습니다.
+                        제가 학원강사 하면서 결국에 잘하는 애들은 잠깐 열심히 하는 애들보다 매일 꾸준히 하는 애들이 결국 잘하는 걸 느꼈습니다.
+                        저는 잠깐의 반짝함이 아닌 꾸준함을 장착한 개발자가 되도록 노력하겠습니다.
                     </span>
+                </article>
+                <article>
+                    <h3>Career</h3>
+                    <ul>
+                        <li>서울시립대학교 전자전기 컴퓨터공학부 졸업(2020.03)</li>
+                        <li>NSHC xProtect팀 Web 보안 키패드 담당(2020.04 ~ 재직중)</li>
+                        <li>우아한 테크러닝 3기 수강중 (2020.09 ~ 2020.09.10)</li>
+                        <li>React Study 운영중 (2020.08 ~ )</li>
+                    </ul>
                 </article>
             </Iam>"
             <section className="career">
