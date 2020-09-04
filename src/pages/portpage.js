@@ -7,6 +7,10 @@ import responsibleWeb from "../assets/img/responsibleweb.jpg"
 import danggn from "../assets/img/danggn.jpg"
 import encrypt from "../assets/img/encryption.jpg"
 import keypadImg from "../assets/img/keypad.jpg"
+import reactImg from "../assets/img/reactStudy.png"
+import algorithmImg from "../assets/img/algorithmImg.png"
+import presentation from "../assets/img/presentation.jpeg"
+
 const PortSection = styled.article`
     margin-top:100px;
     position:relative;
@@ -47,8 +51,8 @@ const cardList ={
         category:"NSHC",
         title:"암호 알고리즘 세미나",
         skill:"RSA, ECDH, AES",
-        link:"",
-        img:"",
+        link:"https://github.com/maintainker/portfolioData/tree/master/crypto",
+        img:presentation,
         script:"외부 인증서 모듈과 연계과정에서 사내 암호학 이해도와 팀내 암호학 이해도를 높히기 위하여 도입을 위한 암복호화 알고리즘 세미나 진행"
     },
     algorithm:{
@@ -56,7 +60,7 @@ const cardList ={
         title:"알고리즘 스터디",
         skill:"Data Structure, Algorithm",
         link:"https://github.com/maintainker/portfolioData/tree/master/algorithm",
-        img:"",
+        img:algorithmImg,
         script:"알고리즘에 관련된 다양한 자료구조를 직접 자바스크립트로 구현해보고 자바스크립트로 문제 해결능력까지 기를수 있도록 다양한 알고리즘 문제를 직접 풀어보았습니다."
     },
     danggn:{
@@ -72,7 +76,7 @@ const cardList ={
         title:"reactStudy",
         skill:"ReactJS",
         link:"https://velog.io/@maintainker/%EC%99%9C-%EB%A6%AC%EC%97%91%ED%8A%B8%EC%9D%B8%EA%B0%80",
-        img:"",
+        img:reactImg,
         script:"당근마켓을 하며 알고있다고 생각했던 React의 많은 부족한 부분을 발견하여 현재 8월 초부터 리액트 스터디를 시작하여 꾸준히 공부해나가고 있습니다."
     },
     webStandard:{
