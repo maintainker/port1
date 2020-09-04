@@ -41,7 +41,10 @@ const Contactcontents = ({openDialog}) =>{
             body: formData, 
         })
         .then(res => res.json())
-        .then(response => console.log('Success:', JSON.stringify(response)))
+        .then(response => {
+            console.log('Success:', JSON.stringify(response))
+            alert("메일이 정상적으로 보내졌습니다.")
+        })
         .catch(error => console.error('Error:', error));
     }      
 
